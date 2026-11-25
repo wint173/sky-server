@@ -4,7 +4,7 @@
 
 | ファイル | 使う人 |
 |---|---|
-| [sky-server-1.6.0.mrpack](files/sky-server-1.6.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
+| [sky-server-1.7.0.mrpack](files/sky-server-1.7.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
 | [install-sky-server.zip](files/install-sky-server.zip) | 公式ランチャーを使う人（展開して、中の `install-sky-server.bat` を実行） |
 
 ファイルを開いたページの右上にある「Download raw file」ボタンで保存できます。
@@ -12,7 +12,7 @@
 
 ---
 
-> 2026-11-26 時点の案内です（Jade、シェーダー Complementary Unbound、F3 画面を見やすくする BetterF3 を追加しました。その前に Exposure: Polaroid を追加し、写真の現像を簡単にしています）。
+> 2026-11-26 時点の案内です（Jade、シェーダー Complementary Unbound、F3 画面を見やすくする BetterF3、額縁の地図を立体にする 3D Maps を追加しました。その前に Exposure: Polaroid を追加し、写真の現像を簡単にしています）。
 
 ## 1. サーバー情報
 
@@ -26,10 +26,10 @@
 
 上の「ダウンロード」のファイルで、NeoForge・mod・接続先の登録までまとめて入ります。どちらか一つを選んでください。
 
-### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.6.0.mrpack`
+### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.7.0.mrpack`
 
 1. Modrinth App（https://modrinth.com/app ）か Prism Launcher（https://prismlauncher.org ）を入れる。
-2. `sky-server-1.6.0.mrpack` を読み込む（古い版を入れた人は、1.6.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
+2. `sky-server-1.7.0.mrpack` を読み込む（古い版を入れた人は、1.7.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
 3. 任意の mod（Sodium、Iris、シェーダー）を入れるか聞かれたら、好みで選ぶ。Iris とシェーダーを使うときは Sodium も選ぶ。
 4. 起動して、マルチプレイの「空島サーバー」に接続する。
 
@@ -40,13 +40,13 @@
 3. Sodium とシェーダーを入れるか聞かれるので、`y` か `n` で答える。
 4. ランチャーを開き、起動構成「空島サーバー」を選んで起動し、マルチプレイの「空島サーバー」に接続する。
 
-スクリプトがすること: NeoForge 21.1.267 の導入、`.minecraft\installations\sky-server` への mod の取得（Modrinth から。ハッシュ確認あり）、サーバー一覧への登録、起動構成「空島サーバー」（メモリ 4GB）の追加。他の起動構成やワールドには触りません。2 回目以降は、足りないものだけ取得します。
+スクリプトがすること: NeoForge 21.1.267 の導入、`.minecraft\installations\sky-server` への mod の取得（Modrinth など、各 mod の公式の配布元から。ハッシュ確認あり）、サーバー一覧への登録、起動構成「空島サーバー」（メモリ 4GB）の追加。他の起動構成やワールドには触りません。2 回目以降は、足りないものだけ取得します。
 
 うまくいかないときは、下の「手動で入れる」の手順で入れてください。
 
 ## 2. 導入する mod 一覧（手動で入れる場合）
 
-### 必須（21 個。サーバーと同じ版を入れる）
+### 必須（22 個。サーバーと同じ版を入れる）
 
 | mod | 版 | ダウンロード |
 |---|---|---|
@@ -63,6 +63,7 @@
 | Exposure: Space | 1.4.0 | https://modrinth.com/mod/exposure-space |
 | Exposure: Polaroid | 1.1.6 | https://modrinth.com/mod/exposure-polaroid （撮るとすぐ写真が出るカメラ） |
 | Jade | 15.10.6 | https://modrinth.com/mod/jade （見ているブロックや mob の名前・情報を画面上に出す） |
+| 3D Maps（Maps3D） | 1.2.4 | https://www.curseforge.com/minecraft/mc-mods/maps3d （CurseForge にだけある。NeoForge 1.21.1 用の `maps3d_1.2.4-1.21.1-neoforge.jar` を選ぶ。額縁に入れた地図が立体になる。スニークしながら右クリックか M キーで設定を開ける） |
 | Create Collision Crashfix | 1.0.0 | https://modrinth.com/mod/create-collision-crashfix |
 | JEI（Just Enough Items） | 19.64.0.455 | https://modrinth.com/mod/jei |
 | MezzConfig | 0.7.1 | https://modrinth.com/mod/mezzconfig （JEI に必要） |

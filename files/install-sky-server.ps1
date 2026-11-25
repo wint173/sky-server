@@ -200,6 +200,14 @@ $Manifest = @'
                   },
                   {
                       "dir":  "mods",
+                      "filename":  "maps3d_1.2.4-1.21.1-neoforge.jar",
+                      "url":  "https://mediafilez.forgecdn.net/files/9058/757/maps3d_1.2.4-1.21.1-neoforge.jar",
+                      "sha1":  "0a8cde4af52b9073d334543ccc388c657a30b557",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
                       "filename":  "ok_zoomer-neo-10.0.0-beta.13.jar",
                       "url":  "https://cdn.modrinth.com/data/aXf2OSFU/versions/AkPuuAgJ/ok_zoomer-neo-10.0.0-beta.13.jar",
                       "sha1":  "bf38fe686628eca79cc1b33c6e60a1eb765c6b39",
