@@ -4,7 +4,7 @@
 
 | ファイル | 使う人 |
 |---|---|
-| [sky-server-1.3.0.mrpack](files/sky-server-1.3.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
+| [sky-server-1.4.0.mrpack](files/sky-server-1.4.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
 | [install-sky-server.zip](files/install-sky-server.zip) | 公式ランチャーを使う人（展開して、中の `install-sky-server.bat` を実行） |
 
 ファイルを開いたページの右上にある「Download raw file」ボタンで保存できます。
@@ -12,7 +12,7 @@
 
 ---
 
-> 2026-11-25 時点の案内です（Legendary Monsters・Create Big Cannons・シェーダー Ray を追加。ワールドを新しく作り直しました）。
+> 2026-11-26 時点の案内です（Exposure: Polaroid を追加し、写真の現像を簡単にしました）。
 
 ## 1. サーバー情報
 
@@ -26,10 +26,10 @@
 
 上の「ダウンロード」のファイルで、NeoForge・mod・接続先の登録までまとめて入ります。どちらか一つを選んでください。
 
-### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.3.0.mrpack`
+### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.4.0.mrpack`
 
 1. Modrinth App（https://modrinth.com/app ）か Prism Launcher（https://prismlauncher.org ）を入れる。
-2. `sky-server-1.3.0.mrpack` を読み込む（古い版を入れた人は、1.3.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
+2. `sky-server-1.4.0.mrpack` を読み込む（古い版を入れた人は、1.4.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
 3. 任意の mod（Sodium、Iris、シェーダー）を入れるか聞かれたら、好みで選ぶ。Iris とシェーダーを使うときは Sodium も選ぶ。
 4. 起動して、マルチプレイの「空島サーバー」に接続する。
 
@@ -46,7 +46,7 @@
 
 ## 2. 導入する mod 一覧（手動で入れる場合）
 
-### 必須（19 個。サーバーと同じ版を入れる）
+### 必須（20 個。サーバーと同じ版を入れる）
 
 | mod | 版 | ダウンロード |
 |---|---|---|
@@ -61,6 +61,7 @@
 | Kaleidoscope Cookery | 1.6.0 | https://modrinth.com/mod/kaleidoscope-cookery |
 | Exposure | 1.9.21 | https://modrinth.com/mod/exposure |
 | Exposure: Space | 1.4.0 | https://modrinth.com/mod/exposure-space |
+| Exposure: Polaroid | 1.1.6 | https://modrinth.com/mod/exposure-polaroid （撮るとすぐ写真が出るカメラ） |
 | Create Collision Crashfix | 1.0.0 | https://modrinth.com/mod/create-collision-crashfix |
 | JEI（Just Enough Items） | 19.64.0.455 | https://modrinth.com/mod/jei |
 | MezzConfig | 0.7.1 | https://modrinth.com/mod/mezzconfig （JEI に必要） |
@@ -121,3 +122,11 @@
   - いつ、何をしたか
   - `logs/latest.log` の該当部分
   - 使っている mod の版
+
+## 写真（Exposure）について
+
+このサーバーでは、写真づくりを簡単にしてあります。
+
+- インスタントカメラ（Exposure: Polaroid）: 撮るとその場で写真が出てきます。現像はいりません
+- 普通のカメラのフィルム: 白黒もカラーも、作業台でフィルムと水入り瓶 1 本を並べると現像できます（Create の注液装置で水を注いでも現像できます）
+- 暗室（Lightroom）: 暗い場所でも使えます。カラー写真も黒の染料 1 個で作れます

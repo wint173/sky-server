@@ -184,6 +184,14 @@ $Manifest = @'
                   },
                   {
                       "dir":  "mods",
+                      "filename":  "exposure_polaroid-neoforge-1.21.1-1.1.6.jar",
+                      "url":  "https://cdn.modrinth.com/data/WEWiqYkW/versions/WfVyzdJL/exposure_polaroid-neoforge-1.21.1-1.1.6.jar",
+                      "sha1":  "141ea133aff47e1655bd4a4937688bede22ebe58",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
                       "filename":  "ok_zoomer-neo-10.0.0-beta.13.jar",
                       "url":  "https://cdn.modrinth.com/data/aXf2OSFU/versions/AkPuuAgJ/ok_zoomer-neo-10.0.0-beta.13.jar",
                       "sha1":  "bf38fe686628eca79cc1b33c6e60a1eb765c6b39",
