@@ -4,7 +4,7 @@
 
 | ファイル | 使う人 |
 |---|---|
-| [sky-server-1.2.0.mrpack](files/sky-server-1.2.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
+| [sky-server-1.3.0.mrpack](files/sky-server-1.3.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
 | [install-sky-server.zip](files/install-sky-server.zip) | 公式ランチャーを使う人（展開して、中の `install-sky-server.bat` を実行） |
 
 ファイルを開いたページの右上にある「Download raw file」ボタンで保存できます。
@@ -12,7 +12,7 @@
 
 ---
 
-> 2026-11-22 時点の案内です（JEI・JourneyMap・Ok Zoomer・Inventory Profiles Next・Mouse Tweaks を追加）。
+> 2026-11-25 時点の案内です（Legendary Monsters・Create Big Cannons・シェーダー Ray を追加。ワールドを新しく作り直しました）。
 
 ## 1. サーバー情報
 
@@ -26,10 +26,10 @@
 
 上の「ダウンロード」のファイルで、NeoForge・mod・接続先の登録までまとめて入ります。どちらか一つを選んでください。
 
-### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.2.0.mrpack`
+### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.3.0.mrpack`
 
 1. Modrinth App（https://modrinth.com/app ）か Prism Launcher（https://prismlauncher.org ）を入れる。
-2. `sky-server-1.2.0.mrpack` を読み込む（古い版を入れた人は、1.2.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
+2. `sky-server-1.3.0.mrpack` を読み込む（古い版を入れた人は、1.3.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
 3. 任意の mod（Sodium、Iris、シェーダー）を入れるか聞かれたら、好みで選ぶ。Iris とシェーダーを使うときは Sodium も選ぶ。
 4. 起動して、マルチプレイの「空島サーバー」に接続する。
 
@@ -46,7 +46,7 @@
 
 ## 2. 導入する mod 一覧（手動で入れる場合）
 
-### 必須（16 個。サーバーと同じ版を入れる）
+### 必須（19 個。サーバーと同じ版を入れる）
 
 | mod | 版 | ダウンロード |
 |---|---|---|
@@ -66,6 +66,9 @@
 | MezzConfig | 0.7.1 | https://modrinth.com/mod/mezzconfig （JEI に必要） |
 | JourneyMap | 6.0.9 | https://modrinth.com/mod/journeymap |
 | Common Network | 1.0.21 | https://modrinth.com/mod/common-network （JourneyMap に必要） |
+| Legendary Monsters | 2.2.4 | https://modrinth.com/mod/legendary-monsters |
+| Create Big Cannons | 5.11.7 | https://modrinth.com/mod/create-big-cannons |
+| Ritchie's Projectile Library | 2.1.2 | https://modrinth.com/mod/rpl （Create Big Cannons に必要） |
 
 ### クライアントだけに入れる（5 個）
 
@@ -86,7 +89,10 @@
 | Sodium | 0.8.13 | 描画が軽くなる | https://modrinth.com/mod/sodium |
 | Iris | 1.8.14-beta.1 | シェーダーを使える（Sodium 0.8.13 と一緒に入れる） | https://modrinth.com/mod/iris |
 
-シェーダーを使う場合は、シェーダーパック（例: Complementary Reimagined、https://modrinth.com/shader/complementary-reimagined ）を `shaderpacks` フォルダに入れ、ビデオ設定の「シェーダーパック」から選んでください。
+シェーダーを使う場合は、シェーダーパックを `shaderpacks` フォルダに入れ、ビデオ設定の「シェーダーパック」から選んでください。かんたん導入でシェーダーを選ぶと、次の 2 つが入ります（公式ランチャー用スクリプトでは Ray が最初から選ばれた状態になります）。
+
+- Ray（`Ray-0.1.0a0-37c865d-nightly.zip`、https://github.com/kuwacom/ray/releases/tag/nightly ）: 試作段階（アルファ版）のシェーダーです。表示が乱れたり重かったりしたら、Complementary Reimagined に切り替えるか、シェーダーをオフにしてください
+- Complementary Reimagined r5.10（https://modrinth.com/shader/complementary-reimagined ）
 
 ### 注意
 

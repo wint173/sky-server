@@ -160,6 +160,30 @@ $Manifest = @'
                   },
                   {
                       "dir":  "mods",
+                      "filename":  "legendary_monsters-2.2.4 MC 1.21.1.jar",
+                      "url":  "https://cdn.modrinth.com/data/9d9Bkqva/versions/zkH9rSlF/legendary_monsters-2.2.4%20MC%201.21.1.jar",
+                      "sha1":  "85778d7f4b7c1546279be9374be3b71b47e2c47d",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
+                      "filename":  "createbigcannons-5.11.7+mc.1.21.1.jar",
+                      "url":  "https://cdn.modrinth.com/data/GWp4jCJj/versions/bOiDu0LS/createbigcannons-5.11.7%2Bmc.1.21.1.jar",
+                      "sha1":  "c90ee0b2142e2c58d233e150cb3a24c7cb07eb2d",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
+                      "filename":  "ritchiesprojectilelib-2.1.2+mc.1.21.1-neoforge.jar",
+                      "url":  "https://cdn.modrinth.com/data/B3pb093D/versions/hZ6B2Z0x/ritchiesprojectilelib-2.1.2%2Bmc.1.21.1-neoforge.jar",
+                      "sha1":  "ec2e4996f8bee8714173e603e379fef8a6901765",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
                       "filename":  "ok_zoomer-neo-10.0.0-beta.13.jar",
                       "url":  "https://cdn.modrinth.com/data/aXf2OSFU/versions/AkPuuAgJ/ok_zoomer-neo-10.0.0-beta.13.jar",
                       "sha1":  "bf38fe686628eca79cc1b33c6e60a1eb765c6b39",
@@ -211,6 +235,14 @@ $Manifest = @'
                       "filename":  "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
                       "url":  "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
                       "sha1":  "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+                      "client":  "optional",
+                      "group":  "shaders"
+                  },
+                  {
+                      "dir":  "shaderpacks",
+                      "filename":  "Ray-0.1.0a0-37c865d-nightly.zip",
+                      "url":  "https://github.com/kuwacom/ray/releases/download/nightly/Ray-0.1.0a0-37c865d-nightly.zip",
+                      "sha1":  "c16f1a155dc6a3e7112445310631296bda8fd90a",
                       "client":  "optional",
                       "group":  "shaders"
                   },
@@ -328,7 +360,7 @@ if (Test-Path (Join-Path $MinecraftDir "versions\$versionId\$versionId.json")) {
 $gameDir = Join-Path $MinecraftDir "installations\$GameDirName"
 $wantSodium = Ask "[任意] Sodium（描画が軽くなる）も入れますか？"
 $wantShaders = $false
-if ($wantSodium) { $wantShaders = Ask "[任意] シェーダー（Iris と Complementary Reimagined）も入れますか？" }
+if ($wantSodium) { $wantShaders = Ask "[任意] シェーダー（Iris と、シェーダー Ray・Complementary Reimagined）も入れますか？" }
 Write-Host "[2/4] mod を取得します（保存先: $gameDir）..."
 $keep = @{}
 foreach ($f in $Manifest.files) {
