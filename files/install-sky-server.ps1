@@ -192,6 +192,14 @@ $Manifest = @'
                   },
                   {
                       "dir":  "mods",
+                      "filename":  "Jade-1.21.1-NeoForge-15.10.6.jar",
+                      "url":  "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar",
+                      "sha1":  "88ee316e68900080b017f60c12162e2731924cf8",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
                       "filename":  "ok_zoomer-neo-10.0.0-beta.13.jar",
                       "url":  "https://cdn.modrinth.com/data/aXf2OSFU/versions/AkPuuAgJ/ok_zoomer-neo-10.0.0-beta.13.jar",
                       "sha1":  "bf38fe686628eca79cc1b33c6e60a1eb765c6b39",
@@ -259,6 +267,14 @@ $Manifest = @'
                       "filename":  "ComplementaryReimagined_r5.10.zip",
                       "url":  "https://cdn.modrinth.com/data/HVnmMxH1/versions/RKfUB9VC/ComplementaryReimagined_r5.10.zip",
                       "sha1":  "ce5f303920c12f858c6b4c27a521fe7a1ba70aea",
+                      "client":  "optional",
+                      "group":  "shaders"
+                  },
+                  {
+                      "dir":  "shaderpacks",
+                      "filename":  "ComplementaryUnbound_r5.10.zip",
+                      "url":  "https://cdn.modrinth.com/data/R6NEzAwj/versions/QJiYQisE/ComplementaryUnbound_r5.10.zip",
+                      "sha1":  "7a9a6b667b89d6b442837c5c367cd6cc8356b400",
                       "client":  "optional",
                       "group":  "shaders"
                   }
@@ -368,7 +384,7 @@ if (Test-Path (Join-Path $MinecraftDir "versions\$versionId\$versionId.json")) {
 $gameDir = Join-Path $MinecraftDir "installations\$GameDirName"
 $wantSodium = Ask "[任意] Sodium（描画が軽くなる）も入れますか？"
 $wantShaders = $false
-if ($wantSodium) { $wantShaders = Ask "[任意] シェーダー（Iris と、シェーダー Ray・Complementary Reimagined）も入れますか？" }
+if ($wantSodium) { $wantShaders = Ask "[任意] シェーダー（Iris と、シェーダー Ray・Complementary Reimagined・Complementary Unbound）も入れますか？" }
 Write-Host "[2/4] mod を取得します（保存先: $gameDir）..."
 $keep = @{}
 foreach ($f in $Manifest.files) {

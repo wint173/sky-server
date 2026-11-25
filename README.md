@@ -4,7 +4,7 @@
 
 | ファイル | 使う人 |
 |---|---|
-| [sky-server-1.4.0.mrpack](files/sky-server-1.4.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
+| [sky-server-1.5.0.mrpack](files/sky-server-1.5.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
 | [install-sky-server.zip](files/install-sky-server.zip) | 公式ランチャーを使う人（展開して、中の `install-sky-server.bat` を実行） |
 
 ファイルを開いたページの右上にある「Download raw file」ボタンで保存できます。
@@ -12,7 +12,7 @@
 
 ---
 
-> 2026-11-26 時点の案内です（Exposure: Polaroid を追加し、写真の現像を簡単にしました）。
+> 2026-11-26 時点の案内です（Jade とシェーダー Complementary Unbound を追加しました。その前に Exposure: Polaroid を追加し、写真の現像を簡単にしています）。
 
 ## 1. サーバー情報
 
@@ -26,10 +26,10 @@
 
 上の「ダウンロード」のファイルで、NeoForge・mod・接続先の登録までまとめて入ります。どちらか一つを選んでください。
 
-### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.4.0.mrpack`
+### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.5.0.mrpack`
 
 1. Modrinth App（https://modrinth.com/app ）か Prism Launcher（https://prismlauncher.org ）を入れる。
-2. `sky-server-1.4.0.mrpack` を読み込む（古い版を入れた人は、1.4.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
+2. `sky-server-1.5.0.mrpack` を読み込む（古い版を入れた人は、1.5.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
 3. 任意の mod（Sodium、Iris、シェーダー）を入れるか聞かれたら、好みで選ぶ。Iris とシェーダーを使うときは Sodium も選ぶ。
 4. 起動して、マルチプレイの「空島サーバー」に接続する。
 
@@ -46,7 +46,7 @@
 
 ## 2. 導入する mod 一覧（手動で入れる場合）
 
-### 必須（20 個。サーバーと同じ版を入れる）
+### 必須（21 個。サーバーと同じ版を入れる）
 
 | mod | 版 | ダウンロード |
 |---|---|---|
@@ -62,6 +62,7 @@
 | Exposure | 1.9.21 | https://modrinth.com/mod/exposure |
 | Exposure: Space | 1.4.0 | https://modrinth.com/mod/exposure-space |
 | Exposure: Polaroid | 1.1.6 | https://modrinth.com/mod/exposure-polaroid （撮るとすぐ写真が出るカメラ） |
+| Jade | 15.10.6 | https://modrinth.com/mod/jade （見ているブロックや mob の名前・情報を画面上に出す） |
 | Create Collision Crashfix | 1.0.0 | https://modrinth.com/mod/create-collision-crashfix |
 | JEI（Just Enough Items） | 19.64.0.455 | https://modrinth.com/mod/jei |
 | MezzConfig | 0.7.1 | https://modrinth.com/mod/mezzconfig （JEI に必要） |
@@ -90,10 +91,11 @@
 | Sodium | 0.8.13 | 描画が軽くなる | https://modrinth.com/mod/sodium |
 | Iris | 1.8.14-beta.1 | シェーダーを使える（Sodium 0.8.13 と一緒に入れる） | https://modrinth.com/mod/iris |
 
-シェーダーを使う場合は、シェーダーパックを `shaderpacks` フォルダに入れ、ビデオ設定の「シェーダーパック」から選んでください。かんたん導入でシェーダーを選ぶと、次の 2 つが入ります（公式ランチャー用スクリプトでは Ray が最初から選ばれた状態になります）。
+シェーダーを使う場合は、シェーダーパックを `shaderpacks` フォルダに入れ、ビデオ設定の「シェーダーパック」から選んでください。かんたん導入でシェーダーを選ぶと、次の 3 つが入ります（公式ランチャー用スクリプトでは Ray が最初から選ばれた状態になります）。
 
 - Ray（`Ray-0.1.0a0-37c865d-nightly.zip`、https://github.com/kuwacom/ray/releases/tag/nightly ）: 試作段階（アルファ版）のシェーダーです。表示が乱れたり重かったりしたら、Complementary Reimagined に切り替えるか、シェーダーをオフにしてください
 - Complementary Reimagined r5.10（https://modrinth.com/shader/complementary-reimagined ）
+- Complementary Unbound r5.10（https://modrinth.com/shader/complementary-unbound ）: Reimagined と同じ作者のシェーダーで、雲が立体的です。重さは Reimagined と同じくらいです
 
 ### 注意
 
