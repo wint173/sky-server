@@ -4,7 +4,7 @@
 
 | ファイル | 使う人 |
 |---|---|
-| [sky-server-1.5.0.mrpack](files/sky-server-1.5.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
+| [sky-server-1.6.0.mrpack](files/sky-server-1.6.0.mrpack) | Modrinth App / Prism Launcher を使う人 |
 | [install-sky-server.zip](files/install-sky-server.zip) | 公式ランチャーを使う人（展開して、中の `install-sky-server.bat` を実行） |
 
 ファイルを開いたページの右上にある「Download raw file」ボタンで保存できます。
@@ -12,7 +12,7 @@
 
 ---
 
-> 2026-11-26 時点の案内です（Jade とシェーダー Complementary Unbound を追加しました。その前に Exposure: Polaroid を追加し、写真の現像を簡単にしています）。
+> 2026-11-26 時点の案内です（Jade、シェーダー Complementary Unbound、F3 画面を見やすくする BetterF3 を追加しました。その前に Exposure: Polaroid を追加し、写真の現像を簡単にしています）。
 
 ## 1. サーバー情報
 
@@ -26,10 +26,10 @@
 
 上の「ダウンロード」のファイルで、NeoForge・mod・接続先の登録までまとめて入ります。どちらか一つを選んでください。
 
-### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.5.0.mrpack`
+### A. Modrinth App / Prism Launcher を使う人: `sky-server-1.6.0.mrpack`
 
 1. Modrinth App（https://modrinth.com/app ）か Prism Launcher（https://prismlauncher.org ）を入れる。
-2. `sky-server-1.5.0.mrpack` を読み込む（古い版を入れた人は、1.5.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
+2. `sky-server-1.6.0.mrpack` を読み込む（古い版を入れた人は、1.6.0 で入れ直してください）（Modrinth App は「インスタンスを作成」→「ファイルから」、Prism Launcher は「インスタンスを追加」→「インポート」）。
 3. 任意の mod（Sodium、Iris、シェーダー）を入れるか聞かれたら、好みで選ぶ。Iris とシェーダーを使うときは Sodium も選ぶ。
 4. 起動して、マルチプレイの「空島サーバー」に接続する。
 
@@ -72,7 +72,7 @@
 | Create Big Cannons | 5.11.7 | https://modrinth.com/mod/create-big-cannons |
 | Ritchie's Projectile Library | 2.1.2 | https://modrinth.com/mod/rpl （Create Big Cannons に必要） |
 
-### クライアントだけに入れる（5 個）
+### クライアントだけに入れる（7 個）
 
 | mod | 版 | 内容 | ダウンロード |
 |---|---|---|---|
@@ -81,6 +81,8 @@
 | libIPN | 6.6.3 | Inventory Profiles Next に必要 | https://modrinth.com/mod/libipn |
 | Kotlin for Forge | 5.13.0 | Inventory Profiles Next に必要 | https://modrinth.com/mod/kotlin-for-forge |
 | Mouse Tweaks | 2.26.1 | ドラッグやホイールでアイテムをまとめて移動 | https://modrinth.com/mod/mouse-tweaks |
+| BetterF3 | 11.0.3 | F3 画面を見やすくする。出す項目は、Mods 一覧の BetterF3 の設定（Config）から選べる | https://modrinth.com/mod/betterf3 |
+| Cloth Config | 15.0.140 | BetterF3 に必要 | https://modrinth.com/mod/cloth-config |
 
 各ページの「Versions」で、Minecraft 1.21.1 / NeoForge 向けの、上の表の版を選んでください。
 

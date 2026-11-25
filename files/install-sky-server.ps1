@@ -240,6 +240,22 @@ $Manifest = @'
                   },
                   {
                       "dir":  "mods",
+                      "filename":  "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+                      "url":  "https://cdn.modrinth.com/data/8shC1gFX/versions/maXNB1dn/BetterF3-11.0.3-NeoForge-1.21.1.jar",
+                      "sha1":  "8fa17df26d3650416bc124be7a264bc1566a3b26",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
+                      "filename":  "cloth-config-15.0.140-neoforge.jar",
+                      "url":  "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
+                      "sha1":  "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+                      "client":  "required",
+                      "group":  null
+                  },
+                  {
+                      "dir":  "mods",
                       "filename":  "sodium-neoforge-0.8.13+mc1.21.1.jar",
                       "url":  "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
                       "sha1":  "1757289be21ed18db5b0d90703fa3db1b2de5693",
